@@ -1,1 +1,1 @@
-
+Aguardando informações
