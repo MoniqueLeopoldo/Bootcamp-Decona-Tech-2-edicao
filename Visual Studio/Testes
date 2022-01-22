@@ -6,6 +6,6 @@ Para criar um teste, devemos clicar no método que será testado com o botão di
 Padrão AAA
 - Seções
 
-Organizar (Arrange) de um método de testes de unidade inicializa os objetos e define o valor dos dados que são passados para o método sendo testado.
-Agir (Act) invoca o método sendo testado com os parâmetros organizados.
-Declarar (Assent) verifica se a ação do método em teste se comporta conforme o esperado
+Organizar (Arrange) de um método de testes de unidade inicializa os objetos e define o valor dos dados que são passados para o método sendo testado;
+Agir (Act) invoca o método sendo testado com os parâmetros organizados;
+Declarar (Assent) verifica se a ação do método em teste se comporta conforme o esperado.
