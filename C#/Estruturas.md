@@ -13,5 +13,6 @@ O valor não fica quardado na classe, sendo possível reutilizá-la.
 
 
 Interface
+
 É como uma classe base que serve de molde para várias classes.
 Uma classe que implementa uma interface deve implementar todos os membros.
