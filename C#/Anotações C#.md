@@ -10,6 +10,8 @@ Os programas C# são executados no .NET, que inclui:
 
 Atualmente o compilador do C# é o Roslyn.
 
+---------------------------
+
 Como funciona?
 
 O código-fonte escrito em C# é compilado em uma linguagem intermediária (IL)
