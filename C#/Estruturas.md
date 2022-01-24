@@ -9,15 +9,33 @@ Os principais conceitos organizacionais em C# são:
 - membros (campos, métodos, propriedades e evento);
 - assemblies.
 
+Programas
+
 Quando os programas C# são compilados, eles são fisicamente empacotados em assemblies. Os assemblies geralmente têm a extensão de arquivo .exe ou .dll, dependendo se são aplicações ou bibliotecas.
 
+Instruções
 
+Ações de um programa são expressadas usando instruções
 
+{
+Um bloco que permite que várias instruções sejam escritas em constextos.
+}
 
+- Declaração de variáveis e constantes locais;
+- if (condicional);
+- switch (condicional);
+- while (repetição);
+- do (repetição);
+- for (repetição);
+- foreach (repetição).
+- breack (auxiliar as outras ferramentas);
+- continue (auxiliar as outras ferramentas);
+- return (auxiliar as outras ferramentas);
+- throw (tratativas de exceção);
+- try.. catch.. finally (tratativas de exceção);
+- using (importar referências a pacotes e namespaces no projeto);
 
-
-
-
+---------------------------
 
 Namespace
 
@@ -25,13 +43,36 @@ Os namespace são usados para organizar classes dentro do código.
 Para usar uma classe de outro namespace, colocamos "using System" no começo do código ou colocando "System." antes da string.
 Não pode ter duas classes iguais dentro de uma Namespace.
 
+---------------------------
+
+Tipos
+
+Variáveis de tipos de valor contêm diretamente seus dados. As variáveis têm sua própria cópia dos dados e não é possível que as operações afetem outra variável (exceto no caso das variáveis de paramêtro "ref" e "out".
+
+Numéricos: sbyte, short, int, long, byte, ushort, uint, ulong.
+
+Caracteres Unicode: char.
+
+Pontos flutuantes: float, double, decimal
+
+Booleano: bool
+
+enum, struct e tipos nullable (pode receber valores nulos), (exemplo int?)
+
+Referência
+
+Variáveis de tipos de referência armazenam referências a seus dados. É possível que duas variáveis façam referência ao mesmo objeto e, portanto, que operações em uma variável afetem o objeto referenciado pela outra variável.
 
 Classe
 
 Uma clase pode ter campos, propriedades, metódos e eventos dentro dela que são denominados membros.
 Quando uma classe é instanciada, essa instância é chamada de objeto, e nesse objeto podem ser criados os valores de acordo com os campos da classe.
 O valor não fica quardado na classe, sendo possível reutilizá-la.
+- class, object, string (trabalhar com textos).
 
+Tipos Arrays: int[], int[,], etc...
+
+Delegate
 
 Interface
 
@@ -44,6 +85,7 @@ Enum
 
 Declara um conjunto de constantes nomeadas que começam do 0 e aumentam de 1 em 1.
 
+---------------------------
 
 Debugging
 
