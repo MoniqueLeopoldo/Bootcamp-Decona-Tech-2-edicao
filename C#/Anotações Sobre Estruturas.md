@@ -1,4 +1,5 @@
-Estrutura de programa
+Estruturas do Programa
+--
 
 Programas C# consistem em um ou mais arquivos, sendo que, os programas declaram tipos, que contêm membros e podem ser organizados em namespaces. Classes e interfaces são exemplos  de tipos. Campos, métodos, propriedades e eventos são exemplos de membros.
 
@@ -11,13 +12,13 @@ Os principais conceitos organizacionais em C# são:
 
 ---------------------------
 
-Programas
+### Programas
 
 Quando os programas C# são compilados, eles são fisicamente empacotados em assemblies. Os assemblies geralmente têm a extensão de arquivo .exe ou .dll, dependendo se são aplicações ou bibliotecas.
 
 ---------------------------
 
-Instruções
+### Instruções
 
 Ações de um programa são expressadas usando instruções
 
@@ -41,7 +42,7 @@ Um bloco que permite que várias instruções sejam escritas em constextos.
 
 ---------------------------
 
-Namespace
+### Namespace
 
 Os namespace são usados para organizar classes dentro do código.
 Para usar uma classe de outro namespace, colocamos "using System" no começo do código ou colocando "System." antes da string.
@@ -49,7 +50,7 @@ Não pode ter duas classes iguais dentro de uma Namespace.
 
 ---------------------------
 
-Tipos
+### Tipos
 
 Variáveis de tipos de valor contêm diretamente seus dados. As variáveis têm sua própria cópia dos dados e não é possível que as operações afetem outra variável (exceto no caso das variáveis de paramêtro "ref" e "out".
 
@@ -65,13 +66,13 @@ enum, struct e tipos nullable (pode receber valores nulos), (exemplo int?)
 
 ---------------------------
 
-Referência
+### Referência
 
 Variáveis de tipos de referência armazenam referências a seus dados. É possível que duas variáveis façam referência ao mesmo objeto e, portanto, que operações em uma variável afetem o objeto referenciado pela outra variável.
 
 ---------------------------
 
-Classe
+### Classe
 
 São os tipos mais fundamentais de C#, sendo ela uma estrutura de dados que combina estado (campos) e ações (métodos). 
 
@@ -81,7 +82,9 @@ O valor não fica guardado na classe, sendo possível reutilizá-la.
 
 As classes suportam herança e polimorfismo, mecanismos pelos quais as classes derivadas podem entender e especializar as classes base.
 
-- class, object, string (trabalhar com textos).
+- class;
+- object;
+- string (trabalhar com textos).
 
 Instâncias de classes (objetos) são criadas usando o operador _new_, que aloca memória para uma nova instância, chama um construtor para inicializar a instância e retorna uma referência à instância.
 
@@ -93,7 +96,7 @@ A memória ocupada por um objeto é recuperada automaticamente quando o objeto n
 
 ---------------------------
 
-Membros
+### Membros
 
 Os membros de uma classe podem ser estáticos ou memebros da instância.
 
@@ -103,7 +106,7 @@ Constantes, variáveis, métodos, propriedades, construtores, etc...
 
 ---------------------------
 
-Acessibilidade
+### Acessibilidade
 
 Cada membro de uma classe tem uma acessibilidade associada, que controla as regiões do texto do programa que podem acessar o membro.
 
@@ -115,7 +118,7 @@ Pode ser:
 
 ---------------------------
 
-Herança
+### Herança
 
 Uma declaração de classe pode especificar uma classe base, herdando os membros _public_, _internal_ e _protected_ da classe base.
 
@@ -123,7 +126,7 @@ Omitir uma especificação de classe base é o mesmo  que derivar do tipo _objec
 
 ---------------------------
 
-Metódos 
+### Metódos 
 
 Um metódo é um membro que implementa uma computação ou ação que pode ser executada por um objeto ou classe.
 
@@ -131,7 +134,7 @@ Os métodos podem ter uma lista de parâmetros, que representam valores ou refer
 
 ---------------------------
 
-Tipos Arrays: int[], int[,], etc...
+### Tipos Arrays
 
 Um array é uma estrutura de dados que contém um número X de elementos, todos do mesmo tipo que são acessados através de índeces computados.
 
@@ -141,21 +144,28 @@ Ao criar uma array é especificando o tamanho da nova instância, que é fixo du
 
 Os índices dos elementos de um array variam de 0 a comprimento do array - 1. 
 
----------------------------
-
-Delegate
-
----------------------------
-
-Interface
-
-É como uma classe base que serve de molde para várias classes.
-Uma classe que implementa uma interface deve implementar todos os membros.
-Ele sempre precisa da lera "I" antes do nome.
+exemplos de arrays: 
+- int[];
+- int[,]; etec...
 
 ---------------------------
 
-Structs
+### Delegate
+
+---------------------------
+
+### Interface (ele sempre precisa da lera "I" antes do nome.)
+
+É como uma classe base que serve de molde para várias classes. Uma interface define um contrato que pode ser implementado por classes e _structs_.
+Uma classe que implementa uma interface deve implementar todos os membros. Uma interface pode conter métodos, propriedades, eventos e indexadores.
+
+Uma interface não fornece implementações dos membros que define - apenas suas "assinaturas"
+
+As interfaces podem empregar herança múltipla, ou seja, obrigando a utilizar o metódo que esta interface usa.
+
+---------------------------
+
+### Structs
 
 Como as classes, as _structs_ são estruturas de dados que podem conter membros de dados e membros de ação, mas diferentemente das classes, as _structs_ são tipos de valor e não requerem alocação de heap (local onde está o dado original da referência).
 
@@ -171,20 +181,28 @@ Constutores de _structs_ são chamados como o operador _new_, semelhante a um co
 
 ---------------------------
 
-Enum
+### Enum
 
 Declara um conjunto de constantes nomeadas que começam do 0 e aumentam de 1 em 1.
 
+Um _enum_ é um tipo de valor distinto com um conjunto de constantes nomeadas.
+
+Você define enumerações quando precisa definir um tipo que pode ter um conjunto de valores discretos. Eles usam um dos tipos de valor integral como armazenamento subjacente. Eles fornecem significado semântico aos valores discretos.
+
+Cada tipo de _enum_ possui um tipo integral correspondente chamado tipo subjacente do tipo de _enum_
+
+Um tipo de enumeração que não declara explicitamente um tipo subjacente tem um tipo subjacente _int_
+
 ---------------------------
 
-Debugging
+### Debugging
 
 A depuração pode ser feita colocando um BreakPoint no canto esquerdo do código ou apertando F9 e executando ele.
 O código vai parar onde foi colocado o BreakPoint e então o código poderá ser inspecionado.
 
 ---------------------------
 
-Anotações gerais
+# Anotações gerais
 
 Variável: posso atribuir diversos valores
 
