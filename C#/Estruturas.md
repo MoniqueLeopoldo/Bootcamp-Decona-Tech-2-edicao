@@ -91,3 +91,8 @@ Debugging
 
 A depuração pode ser feita colocando um BreakPoint no canto esquerdo do código ou apertando F9 e executando ele.
 O código vai parar onde foi colocado o BreakPoint e então o código poderá ser inspecionado.
+
+---------------------------
+
+Variável: posso atribuir diversos valores
+Constante: seu valor não pode ser alterado
