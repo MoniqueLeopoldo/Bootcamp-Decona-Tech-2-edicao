@@ -95,4 +95,5 @@ O código vai parar onde foi colocado o BreakPoint e então o código poderá se
 ---------------------------
 
 Variável: posso atribuir diversos valores
+
 Constante: seu valor não pode ser alterado
