@@ -1,0 +1,203 @@
+Estrutura de programa
+
+Programas C# consistem em um ou mais arquivos, sendo que, os programas declaram tipos, que contêm membros e podem ser organizados em namespaces. Classes e interfaces são exemplos  de tipos. Campos, métodos, propriedades e eventos são exemplos de membros.
+
+Os principais conceitos organizacionais em C# são:
+- programas;
+- namespaces;
+- tipos (classes e interfaces);
+- membros (campos, métodos, propriedades e evento);
+- assemblies.
+
+---------------------------
+
+Programas
+
+Quando os programas C# são compilados, eles são fisicamente empacotados em assemblies. Os assemblies geralmente têm a extensão de arquivo .exe ou .dll, dependendo se são aplicações ou bibliotecas.
+
+---------------------------
+
+Instruções
+
+Ações de um programa são expressadas usando instruções
+
+{
+Um bloco que permite que várias instruções sejam escritas em constextos.
+}
+
+- Declaração de variáveis e constantes locais;
+- if (condicional);
+- switch (condicional);
+- while (repetição);
+- do (repetição);
+- for (repetição);
+- foreach (repetição).
+- breack (auxiliar as outras ferramentas);
+- continue (auxiliar as outras ferramentas);
+- return (auxiliar as outras ferramentas);
+- throw (tratativas de exceção);
+- try.. catch.. finally (tratativas de exceção);
+- using (importar referências a pacotes e namespaces no projeto);
+
+---------------------------
+
+Namespace
+
+Os namespace são usados para organizar classes dentro do código.
+Para usar uma classe de outro namespace, colocamos "using System" no começo do código ou colocando "System." antes da string.
+Não pode ter duas classes iguais dentro de uma Namespace.
+
+---------------------------
+
+Tipos
+
+Variáveis de tipos de valor contêm diretamente seus dados. As variáveis têm sua própria cópia dos dados e não é possível que as operações afetem outra variável (exceto no caso das variáveis de paramêtro "ref" e "out".
+
+Numéricos: sbyte, short, int, long, byte, ushort, uint, ulong.
+
+Caracteres Unicode: char.
+
+Pontos flutuantes: float, double, decimal
+
+Booleano: bool
+
+enum, struct e tipos nullable (pode receber valores nulos), (exemplo int?)
+
+---------------------------
+
+Referência
+
+Variáveis de tipos de referência armazenam referências a seus dados. É possível que duas variáveis façam referência ao mesmo objeto e, portanto, que operações em uma variável afetem o objeto referenciado pela outra variável.
+
+---------------------------
+
+Classe
+
+São os tipos mais fundamentais de C#, sendo ela uma estrutura de dados que combina estado (campos) e ações (métodos). 
+
+Uma clase pode ter campos, propriedades, metódos e eventos dentro dela que são denominados membros.
+Quando uma classe é instanciada, essa instância é chamada de objeto, e nesse objeto podem ser criados os valores de acordo com os campos da classe.
+O valor não fica guardado na classe, sendo possível reutilizá-la.
+
+As classes suportam herança e polimorfismo, mecanismos pelos quais as classes derivadas podem entender e especializar as classes base.
+
+- class, object, string (trabalhar com textos).
+
+Instâncias de classes (objetos) são criadas usando o operador _new_, que aloca memória para uma nova instância, chama um construtor para inicializar a instância e retorna uma referência à instância.
+
+Ponto p1 = new Ponto (0 [X], 0[Y]);
+
+Ponto p2 = new Ponto (10, 20);
+
+A memória ocupada por um objeto é recuperada automaticamente quando o objeto não está mais acessivél. Não é necessário nem possível desalocar explicitamente objetos em C#.
+
+---------------------------
+
+Membros
+
+Os membros de uma classe podem ser estáticos ou memebros da instância.
+
+Membros estáticos pertencem a classe e membros de isntância pertencem ao objeto.
+
+Constantes, variáveis, métodos, propriedades, construtores, etc...
+
+---------------------------
+
+Acessibilidade
+
+Cada membro de uma classe tem uma acessibilidade associada, que controla as regiões do texto do programa que podem acessar o membro.
+
+Pode ser:
+- public (pode ser acessada por qualquer classe do código em geral);
+- protected (só quem está dentro de seus {} herdará esta condição);
+- internal;
+- private (só pode ser acessada na classe a qual está este código).
+
+---------------------------
+
+Herança
+
+Uma declaração de classe pode especificar uma classe base, herdando os membros _public_, _internal_ e _protected_ da classe base.
+
+Omitir uma especificação de classe base é o mesmo  que derivar do tipo _object_.
+
+---------------------------
+
+Metódos 
+
+Um metódo é um membro que implementa uma computação ou ação que pode ser executada por um objeto ou classe.
+
+Os métodos podem ter uma lista de parâmetros, que representam valores ou referências de variáveis passados para o método, e um tipo de retorno, que especifica o tipo de valor calculado e retornado pelo metódo.
+
+---------------------------
+
+Tipos Arrays: int[], int[,], etc...
+
+Um array é uma estrutura de dados que contém um número X de elementos, todos do mesmo tipo que são acessados através de índeces computados.
+
+Arrays são tipos de refência e a declaração de uma variável _array_ simplesmente reserva espaço para uma referência de uma instância de _array_
+
+Ao criar uma array é especificando o tamanho da nova instância, que é fixo durante todo o tempo de vida da instância.
+
+Os índices dos elementos de um array variam de 0 a comprimento do array - 1. 
+
+---------------------------
+
+Delegate
+
+---------------------------
+
+Interface
+
+É como uma classe base que serve de molde para várias classes.
+Uma classe que implementa uma interface deve implementar todos os membros.
+Ele sempre precisa da lera "I" antes do nome.
+
+---------------------------
+
+Structs
+
+Como as classes, as _structs_ são estruturas de dados que podem conter membros de dados e membros de ação, mas diferentemente das classes, as _structs_ são tipos de valor e não requerem alocação de heap (local onde está o dado original da referência).
+
+Uma variável de um tipo de _struct_ armazena diretamente os dados da estrutura, enquanto uma variável de um tipo de classe armazena uma referência a um objeto alocado na memória.
+
+Structs não aceita herança determinada pelo desenvolvedor.
+
+São úteis para pequenas estruturas de dados que possuem semântica de valor: números complexos, pontos em um sistema de coordenadas ou pares de chave-valor em um dicionário são bons exemplos de utilização.
+
+Seu uso em vez de classes para pequenas estruturas de dados podem fazer uma grande diferença no número de alocações de memória.
+
+Constutores de _structs_ são chamados como o operador _new_, semelhante a um construtor de classe, mas em vez de alocar dinamicamente um objeto no _heap_ gerenciado e retornar uma referência a ele, um construtor _structs_ simplemente retorna o próprio valor _structs_ (normalmente em um local temporário na _stack_), e esse valor é copiado conforme necessário.
+
+---------------------------
+
+Enum
+
+Declara um conjunto de constantes nomeadas que começam do 0 e aumentam de 1 em 1.
+
+---------------------------
+
+Debugging
+
+A depuração pode ser feita colocando um BreakPoint no canto esquerdo do código ou apertando F9 e executando ele.
+O código vai parar onde foi colocado o BreakPoint e então o código poderá ser inspecionado.
+
+---------------------------
+
+Anotações gerais
+
+Variável: posso atribuir diversos valores
+
+Constante: seu valor não pode ser alterado
+
+Concatenar: ${texto ou código}
+
+i++ = i+1
+
+! = expressão de negativa no código C#
+
+args / args.Length = argumentos
+
+override = sobrescrever (uma classe filha, pode sobrescrever uma classe mãe)
+
+ref = referência um determinado metódo dentro do código, se este metódo sofre alteração, todas as suas referencias serão alteradas.
