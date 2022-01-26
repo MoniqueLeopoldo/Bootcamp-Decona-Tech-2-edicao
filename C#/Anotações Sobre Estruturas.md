@@ -18,6 +18,50 @@ Quando os programas C# são compilados, eles são fisicamente empacotados em ass
 
 ---------------------------
 
+### O que é a POO (programação orientada a objetos? 
+
+A POO é um paradigama de programação, ou seja, corresponde a uma técnica de programação para um fim específico.
+
+Dentro desta técnica, existem quatro pilares:
+
+- Abstração, abstrair um objeto do mundo real para um contexto específico, considerando apenas os atributos importantes.
+
+- Encapsulamenteo serve para proteger uma classe e definir limites para alterações de suas propriedades. Também serve para ocultar seu comportamento e expor somente o necessário.
+
+![image](https://user-images.githubusercontent.com/86674024/151057191-92ac55bf-762e-4873-b864-1d8ffecc9090.png)
+
+
+- Herança nos permite reutilizar atributos, métodos e comportamentos de uma classe em outras classes. Serve para agrupar objetos que são do mesmo tipo, porém com características diferentes. 
+
+- Polimorfismo vem do grego e significa "muitas formas". Com o polimorfismo podemos sobrescrever métodos das classes filhas para que se comportem de maneira diferente e ter sua própria implementação.
+
+Polimorfismo em tempo de compilação (Overload/Early Binding);
+
+Criar vários métodos com o mesmo nome, mas cada qual terá seu parâmetro, sendo possível utilizar quaisquer um deles.
+
+Polimorfismo em tempo de execução (Override/Late Binding)
+
+É possível sobrescrever um método de uma classe herdada da seguinte forma: public virtual void ..... (autorizar sobrescrever) / public override void .... (está sobrescrevendo)
+
+---------------------------
+
+### Paradigmas de programação
+
+Uma paradigma é um conjunto regras, técnicas e modelos, ou seja, nada mais é do que um modelo de técnicas, estruturas e formas de solucionar um problema.
+
+Uma linguagem de programação implementas um ou mais paradigmas.
+
+Tipso de paradigmas:
+- Programação orientada a objetos POO (se aproxima ao mundo real);
+- Programação estruturada;
+- Programação imperativa;
+- Programação procedural;
+- Programação orientada a eventos;
+- Programação lógica.
+- Etc....
+
+---------------------------
+
 ### Instruções
 
 Ações de um programa são expressadas usando instruções
@@ -96,6 +140,24 @@ A memória ocupada por um objeto é recuperada automaticamente quando o objeto n
 
 ---------------------------
 
+### Classe abstrata
+
+Uma classe abstrata tem como objetivo ser exclusivamente um modelo para ser herdado, portanto não pode ser instanciada. Você pode implementar métodos ou deixá-los a cargo de quem herdar, ou seja, não pode ser alterada diretamente, sendo necessário a sua implementação "sobrescrever".
+
+---------------------------
+
+### Classe selada (class sealed)
+
+Uma classe selada tem como objetivo impedir que outras classes façam uma herança dela, ou seja, nenhuma classe pode ser sua derivada. Também existem métodos e propriedades seladas, que no caso, não permite polimorfismo (que seja sobrescrita).
+
+---------------------------
+
+### Classe object
+
+A classe System.Object é a mãe de todas as classes na hierarquia do .NET. Todas as classes derivam, diretamente ou indiretamente da classe Object, e ela tem como objetivo prover serviços de baixo nível para suas classes filhas.
+
+---------------------------
+
 ### Membros
 
 Os membros de uma classe podem ser estáticos ou memebros da instância.
@@ -159,7 +221,9 @@ exemplos de arrays:
 É como uma classe base que serve de molde para várias classes. Uma interface define um contrato que pode ser implementado por classes e _structs_.
 Uma classe que implementa uma interface deve implementar todos os membros. Uma interface pode conter métodos, propriedades, eventos e indexadores.
 
-Uma interface não fornece implementações dos membros que define - apenas suas "assinaturas"
+É como se fosse uma classe abstrata, podendo definir métodos abstratos para serem implementados.
+
+Uma interface não fornece implementações dos membros que define - apenas suas "assinaturas".
 
 As interfaces podem empregar herança múltipla, ou seja, obrigando a utilizar o metódo que esta interface usa.
 
@@ -204,6 +268,8 @@ O código vai parar onde foi colocado o BreakPoint e então o código poderá se
 
 # Anotações gerais
 
+Diferença entre classe e objeto... A classe é um molde, uma abstração do mundo real a qual eu quero representar e o objeto é a construções dessa classe. Exemplo: Bob (pessoa) é um objeto e suas carecterísticas que o compõem como pessoa são as classes (cor do cabelo, tamanho, peso...) e a ação que ele fará é o método.
+
 Variável: posso atribuir diversos valores
 
 Constante: seu valor não pode ser alterado
@@ -219,3 +285,15 @@ args / args.Length = argumentos
 override = sobrescrever (uma classe filha, pode sobrescrever uma classe mãe)
 
 ref = referência um determinado metódo dentro do código, se este metódo sofre alteração, todas as suas referencias serão alteradas.
+
+Para fazer uma classe herdar uma herança: public class _aluno_ : _Pessoa_ (exemplo de classe _aluno_ herdando da classe _Pessoa_)
+
+---------------------------
+
+# Comandos Úteis
+
+Para comentar um parágrafo inteiro: ctrl + K e depois sem soltar o ctrl, tecle "c".
+
+Carregar a opção de auto completar da extensão: F1 / Digitar OmniSharp: Select Project.
+
+Verificar resolução do erro sublinhado em vermelho: ctrl + ". (ponto)".
