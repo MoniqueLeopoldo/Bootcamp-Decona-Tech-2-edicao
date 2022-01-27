@@ -47,6 +47,8 @@ ref = referência um determinado metódo dentro do código, se este metódo sofr
 
 Para fazer uma classe herdar uma herança: public class _aluno_ : _Pessoa_ (exemplo de classe _aluno_ herdando da classe _Pessoa_)
 
+Quando se trata de propriedade quando tem o sinal de "=" estamos chamando o set (atribuir valor), e sem ele estamos chamando o get (apenas acessar o valor).
+
 ---------------------------
 
 # Comandos Úteis
