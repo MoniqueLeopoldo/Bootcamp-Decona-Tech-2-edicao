@@ -12,6 +12,8 @@ ________________________
 
 O Get e Set serve para que você possa atribuir um valor em uma variável de maneira controlada e com validações.
 
+Quando se trata de propriedade quando tem o sinal de "=" estamos chamando o set (atribuir valor), e sem ele estamos chamando o get (apenas acessar o valor).
+
 ________________________
 
 ### Modificadores
