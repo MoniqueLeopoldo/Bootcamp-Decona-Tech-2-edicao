@@ -212,10 +212,6 @@ exemplos de arrays:
 
 ---------------------------
 
-### Delegate
-
----------------------------
-
 ### Interface (ele sempre precisa da lera "I" antes do nome.)
 
 É como uma classe base que serve de molde para várias classes. Uma interface define um contrato que pode ser implementado por classes e _structs_.
