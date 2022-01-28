@@ -49,6 +49,8 @@ Para fazer uma classe herdar uma herança: public class _aluno_ : _Pessoa_ (exem
 
 Quando se trata de propriedade quando tem o sinal de "=" estamos chamando o set (atribuir valor), e sem ele estamos chamando o get (apenas acessar o valor).
 
+Para escolher qual versão do .NET quer usar: global.json.
+
 ---------------------------
 
 # Comandos Úteis
@@ -62,6 +64,8 @@ Verificar resolução do erro sublinhado em vermelho: ctrl + ". (ponto)".
 Atralho para criar construtores, digite: ctor + tab
 
 Atralho para criar Consoles, digite: cw + tab
+
+Pulo de linha: \n
 
 ---------------------------
 
