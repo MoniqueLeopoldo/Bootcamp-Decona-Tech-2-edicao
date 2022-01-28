@@ -284,6 +284,8 @@ ref = referência um determinado metódo dentro do código, se este metódo sofr
 
 Para fazer uma classe herdar uma herança: public class _aluno_ : _Pessoa_ (exemplo de classe _aluno_ herdando da classe _Pessoa_)
 
+O que diferencia um metódo do outro são seus parâmetros que no caso são suas assinaturas.
+
 ---------------------------
 
 # Comandos Úteis
