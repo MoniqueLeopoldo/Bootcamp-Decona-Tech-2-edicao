@@ -12,3 +12,6 @@ https://github.com/gabrielfaraday/csharp-examples
 
 Repositório do exemplo do curso - Tipos de Construtores: 
 https://github.com/leonardo-buta/curso-tipos-de-construtores-dio
+
+Repositório do live - Testes de Software em .NET. Exemplos de utilização com experts da Avanade:
+https://github.com/fructuoso/dio-dotnet-poo-lab-2
