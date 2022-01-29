@@ -15,3 +15,6 @@ https://github.com/leonardo-buta/curso-tipos-de-construtores-dio
 
 Repositório do live - Testes de Software em .NET. Exemplos de utilização com experts da Avanade:
 https://github.com/fructuoso/dio-dotnet-poo-lab-2
+
+Repositório da aula Modelando um banco de dados na prática com SQL SERVER:
+https://github.com/ThiagoAcam/ControleAcessoEstrelaDaMorte
