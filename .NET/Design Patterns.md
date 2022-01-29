@@ -37,3 +37,13 @@ Define uma interface que abstrai a complexidade de interface de subsistemas, ou 
 
 #### Anotações Gerais
 
+Pacote de Instalação: Na aba Browse, instalar _Swashbuckle.AspNetCore_. Para ativar: Botão direito na aplicação... em propriedades... Build... Ticar a opção _XML documentation File_ (facilita na hora de visualizar seu projeto)
+
+Adicionar as seguintes informações em _services.AddControllers()_;
+
+![image](https://user-images.githubusercontent.com/86674024/151639163-275e8077-f4cf-421c-8cf9-1805ded28a55.png)
+
+Adicionar as seguintes informações em _app.UseDeveloperExceptionPage_;
+
+![image](https://user-images.githubusercontent.com/86674024/151639240-b203c2bb-a048-4b26-9435-685451f6537b.png)
+
