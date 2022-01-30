@@ -30,10 +30,17 @@ _NoSQL_- São voltados para um melhor performace, que armazena uma grande quanti
 
 #### Representação banco relacional:
 
-Uma tabela no banco de dados é como uma planilha no excel, com linhas (registros) e colunas (informações daquele registro)
+Uma tabela no banco de dados é como uma planilha no excel, com linhas (registros) e colunas (informações daquele registro).
 
-#### Representação banco relacional:
+#### Atomicidade:
 
-Uma tabela no banco de dados é como uma planilha no excel, com linhas (registros) e colunas (informações daquele registro)
+Controle sobre inicio e fim da transação, é a garantia que todo o bloco de transações foi executado integralmente. 
+Consistência: A garantia de que um dado está íntegro durante e após a transação.
+
+#### Consistência dos dados:
+
+Validar é determinar se os dados capturados pelo sistema cumprem as regras lógicas definidas para manter a sua consistência. 
+Também é preciso ressaltar que a consistência dos dados influencia diretamente a qualidade do software, interferindo na forma como o usuário interage com a aplicação.
+Quando o banco está espelhado (segregado) para agilizar os processor, e receber uma solicitação de consulta só irá mostrar a informação que consta (persiste) em todos os espelhos, ou seja, a informação será mostrada assim que for replicada em todos os espelhos essa é uma diferença entre os bancos relacionais e os demais.  
 
 
