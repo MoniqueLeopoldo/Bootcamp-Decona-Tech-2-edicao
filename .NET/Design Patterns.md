@@ -8,6 +8,15 @@ Surgiram da experimentação e repetição.
 
 Não é um padrão pronto para ser aplicado no seu código, é uma descrição/template de como resolver o seu problema nas mais diferentes situações.
 
+Os mais utilizados são:
+- Adapter;
+- Factory;
+- Observer;
+- Strategy;
+- Builder;
+- State;
+- Singleton.
+
 -------------------------------------
 
 #### GOF - Gang of Four
