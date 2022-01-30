@@ -18,3 +18,6 @@ https://github.com/fructuoso/dio-dotnet-poo-lab-2
 
 Repositório da aula Modelando um banco de dados na prática com SQL SERVER:
 https://github.com/ThiagoAcam/ControleAcessoEstrelaDaMorte
+
+Repositório da aula Introdução a Design Patterns com .NET
+https://github.com/adansklevanskis/Localiza.Frotas
