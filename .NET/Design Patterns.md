@@ -48,5 +48,8 @@ Adicionar as seguintes informações em _app.UseDeveloperExceptionPage_;
 ![image](https://user-images.githubusercontent.com/86674024/151639240-b203c2bb-a048-4b26-9435-685451f6537b.png)
 
 
-Qual Entity Framework instalar: Microsoft.EntityFrameworkCore.InMemory.
+Qual Entity Framework instalar: Microsoft.EntityFrameworkCore.InMemory. E para ativalo...
+
+![image](https://user-images.githubusercontent.com/86674024/151685547-2f236720-e2ac-49a5-b4f7-8a7650b51b7a.png)
+
 
