@@ -151,5 +151,6 @@ Distinct - Retorna uma nova coleção com valores úncios, retorna valores disti
 ## Anotações Gerais
 
 for (int i = 0, i < arrayInteiros.Length; i++), (o Length, ele percorre todo o array)
+                                         
 foreach (int _item_ in _collection_) (outro método de percorrer o array) 
 
